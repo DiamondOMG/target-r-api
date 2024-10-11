@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Navbar() {
@@ -5,13 +6,13 @@ function Navbar() {
 		<header className="flex flex-wrap  md:justify-start md:flex-nowrap z-50 w-full bg-white border-b border-gray-200 dark:bg-neutral-800 dark:border-neutral-700">
 			<nav className="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 py-2 px-4 sm:px-6 lg:px-8">
 				<div className="flex justify-between items-center gap-x-1">
-					<a
+					<Link
 						className="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 dark:text-white"
-						href="#"
+						href="/"
 						aria-label="Brand"
 					>
-						Brand
-					</a>
+						Test API
+					</Link>
 					{/* Collapse Button */}
 					<button
 						type="button"
@@ -67,9 +68,9 @@ function Navbar() {
 						<div className="py-2 md:py-0  flex flex-col md:flex-row md:items-center gap-0.5 md:gap-1">
 							<div className="grow">
 								<div className="flex flex-col md:flex-row md:justify-end md:items-center gap-0.5 md:gap-1">
-									<a
-										className="p-2 flex items-center text-sm bg-gray-100 text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-										href="#"
+									<Link
+										className="p-2 flex items-center text-sm bg-white text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+										href="DPOP_API"
 										aria-current="page"
 									>
 										<svg
@@ -87,8 +88,8 @@ function Navbar() {
 											<path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
 											<path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
 										</svg>
-										Landing
-									</a>
+										DPOP API
+									</Link>
 									{/* Mega Menu */}
 									<div className="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] [--is-collapse:true] md:[--is-collapse:false] ">
 										<button
@@ -114,7 +115,7 @@ function Navbar() {
 												<path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
 												<circle cx={12} cy={12} r={3} />
 											</svg>
-											Resources
+											Restful API
 											<svg
 												className="hs-dropdown-open:-rotate-180 md:hs-dropdown-open:rotate-0 duration-300 shrink-0 size-4 ms-auto md:ms-1"
 												xmlns="http://www.w3.org/2000/svg"
@@ -138,9 +139,43 @@ function Navbar() {
 										>
 											<div className="py-1 md:px-1 space-y-0.5">
 												{/* Link */}
-												<a
+												<Link
 													className="p-3 flex gap-x-4 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 rounded-lg dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-													href="#"
+													href="GetScreenById"
+												>
+													<svg
+														className="shrink-0 size-4 mt-1 text-gray-800 dark:text-neutral-200"
+														xmlns="http://www.w3.org/2000/svg"
+														width={24}
+														height={24}
+														viewBox="0 0 24 24"
+														fill="none"
+														stroke="currentColor"
+														strokeWidth={2}
+														strokeLinecap="round"
+														strokeLinejoin="round"
+													>
+														<line x1={22} x2={2} y1={12} y2={12} />
+														<path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" />
+														<line x1={6} x2="6.01" y1={16} y2={16} />
+														<line x1={10} x2="10.01" y1={16} y2={16} />
+													</svg>
+
+													<div className="grow">
+														<span className="block font-semibold text-sm text-gray-800 dark:text-neutral-200">
+															Get Screen By Id
+														</span>
+														<p className="text-sm text-gray-500 dark:text-neutral-500">
+															Check Specific Screen
+														</p>
+													</div>
+												</Link>
+												{/* End Link */}
+												<div className="my-2 border-t border-gray-100 dark:border-neutral-800" />
+												{/* Link */}
+												<Link
+													className="p-3 flex gap-x-4 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 rounded-lg dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+													href="GetScreenAll"
 												>
 													<svg
 														className="shrink-0 size-4 mt-1 text-gray-800 dark:text-neutral-200"
@@ -161,56 +196,22 @@ function Navbar() {
 													</svg>
 													<div className="grow">
 														<span className="block font-semibold text-sm text-gray-800 dark:text-neutral-200">
-															Data
-														</span>
-														<p className="text-sm text-gray-500 dark:text-neutral-500">
-															How you get the most accurate and up-to-date data
-														</p>
-													</div>
-												</a>
-												{/* End Link */}
-												<div className="my-2 border-t border-gray-100 dark:border-neutral-800" />
-												{/* Link */}
-												<a
-													className="p-3 flex gap-x-4 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 rounded-lg dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-													href="#"
-												>
-													<svg
-														className="shrink-0 size-4 mt-1 text-gray-800 dark:text-neutral-200"
-														xmlns="http://www.w3.org/2000/svg"
-														width={24}
-														height={24}
-														viewBox="0 0 24 24"
-														fill="none"
-														stroke="currentColor"
-														strokeWidth={2}
-														strokeLinecap="round"
-														strokeLinejoin="round"
-													>
-														<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-														<circle cx={9} cy={7} r={4} />
-														<path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-														<path d="M16 3.13a4 4 0 0 1 0 7.75" />
-													</svg>
-													<div className="grow">
-														<span className="block font-semibold text-sm text-gray-800 dark:text-neutral-200">
-															Team{" "}
+															Get Screen All
 															<span className="inline ms-1 font-medium text-xs bg-blue-600 text-white py-1 px-2 rounded-full">
-																We're hiring
+																Wait
 															</span>
 														</span>
 														<p className="text-sm text-gray-500 dark:text-neutral-500">
-															Meet the people building products to help your
-															business grow
+															Check Specific all Screen
 														</p>
 													</div>
-												</a>
+												</Link>
 												{/* End Link */}
 												<div className="my-2 border-t border-gray-100 dark:border-neutral-800" />
 												{/* Link */}
-												<a
+												<Link
 													className="p-3 flex gap-x-4 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 rounded-lg dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-													href="#"
+													href="GetUserAll"
 												>
 													<svg
 														className="shrink-0 size-4 mt-1 text-gray-800 dark:text-neutral-200"
@@ -224,21 +225,23 @@ function Navbar() {
 														strokeLinecap="round"
 														strokeLinejoin="round"
 													>
-														<path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" />
-														<path d="M18 14h-8" />
-														<path d="M15 18h-5" />
-														<path d="M10 6h8v4h-8V6Z" />
+														<line x1={22} x2={2} y1={12} y2={12} />
+														<path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" />
+														<line x1={6} x2="6.01" y1={16} y2={16} />
+														<line x1={10} x2="10.01" y1={16} y2={16} />
 													</svg>
 													<div className="grow">
 														<span className="block font-semibold text-sm text-gray-800 dark:text-neutral-200">
-															Blog
+															Get User All
+															<span className="inline ms-1 font-medium text-xs bg-blue-600 text-white py-1 px-2 rounded-full">
+																Wait
+															</span>
 														</span>
 														<p className="text-sm text-gray-500 dark:text-neutral-500">
-															The latest news, feature releases, and how to grow
-															with data
+															Get all information user
 														</p>
 													</div>
-												</a>
+												</Link>
 												{/* End Link */}
 											</div>
 										</div>
@@ -263,7 +266,7 @@ function Navbar() {
 											<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
 											<circle cx={12} cy={7} r={4} />
 										</svg>
-										Account
+										Wait
 									</a>
 									<a
 										className="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
@@ -286,7 +289,7 @@ function Navbar() {
 											<path d="M22 13a18.15 18.15 0 0 1-20 0" />
 											<rect width={20} height={14} x={2} y={6} rx={2} />
 										</svg>
-										Work
+										Wait
 									</a>
 									<a
 										className="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
@@ -309,7 +312,7 @@ function Navbar() {
 											<path d="M15 18h-5" />
 											<path d="M10 6h8v4h-8V6Z" />
 										</svg>
-										Blog
+										Wait
 									</a>
 								</div>
 							</div>
@@ -324,12 +327,12 @@ function Navbar() {
 								>
 									Sign in
 								</a>
-								<a
+								{/* <a
 									className="py-2 px-2.5 inline-flex items-center font-medium text-sm rounded-lg bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:bg-blue-600"
 									href="#"
 								>
 									Get started
-								</a>
+								</a> */}
 							</div>
 							{/* End Button Group */}
 						</div>
